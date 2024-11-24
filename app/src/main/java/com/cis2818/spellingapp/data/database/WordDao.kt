@@ -10,22 +10,21 @@ import androidx.room.Update
 @Dao
 interface WordDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insertAll(vararg words: Word)
+    suspend fun insertAll(vararg words: Word)
 
     // Note that this uses the primary key
     @Update
-    fun updateWords(vararg words: Word)
+    suspend fun updateWords(vararg words: Word)
 
-    // The delete methods return the number of rows deleted
     @Delete
-    fun delete(word: Word): Int
+    suspend fun delete(word: Word)
 
     @Query("DELETE FROM word WHERE name = :wordName")
-    fun deleteWordByName(wordName: String): Int
+    suspend fun deleteWordByName(wordName: String)
 
     @Query("SELECT * FROM word")
-    fun getAll(): List<Word>
+    suspend fun getAll(): List<Word>
 
     @Query("SELECT * FROM word WHERE name = :wordName")
-    fun getWordByName(wordName: String): Word?
+    suspend fun getWordByName(wordName: String): Word?
 }
