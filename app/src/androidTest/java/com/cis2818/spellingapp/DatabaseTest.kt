@@ -70,7 +70,7 @@ class DatabaseTest  {
         val scenario = ActivityScenario.launch(MainActivity::class.java)
         scenario.onActivity { activity ->
             activity.lifecycleScope.launch {
-                assertEquals(1 , wordDao.delete(testWord))
+                assertEquals(Unit , wordDao.delete(testWord))
             }
         }
 
