@@ -1,9 +1,10 @@
-package com.cis2818.spellingapp
+package com.cis2818.spellingapp.ui.activities
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.cis2818.spellingapp.R
 import com.cis2818.spellingapp.databinding.ActivityMainBinding
 
 

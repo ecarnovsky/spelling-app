@@ -1,4 +1,4 @@
-package com.cis2818.spellingapp
+package com.cis2818.spellingapp.data.database
 
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase

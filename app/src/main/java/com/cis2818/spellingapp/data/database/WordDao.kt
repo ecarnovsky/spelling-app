@@ -1,4 +1,4 @@
-package com.cis2818.spellingapp
+package com.cis2818.spellingapp.data.database
 
 import androidx.room.Dao
 import androidx.room.Delete

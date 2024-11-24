@@ -1,4 +1,4 @@
-package com.cis2818.spellingapp
+package com.cis2818.spellingapp.data.database
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
